@@ -12,7 +12,7 @@ try:
 
     cur = conn.cursor()
 
-    emp_f_name = "Novin"
+    emp_f_name = "Rakamin"
     emp_l_name = "Ardian"
     age = 19
     sex = "male"

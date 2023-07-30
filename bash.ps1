@@ -14,7 +14,7 @@ else {
     # Create the directory
     New-Item -ItemType Directory -Path $directoryPath | Out-Null
 
-    # Final Step: Create a scheduled task to run the script daily at 07:00 AM
+    # Final Step: Create a scheduled task to run the szcript daily at 07:00 AM
     $trigger = New-ScheduledTaskTrigger -Daily -At 7am
 
     $action = New-ScheduledTaskAction -Execute "PowerShell.exe" -Argument "-ExecutionPolicy Bypass -File ""C:\Users\Novin\Downloads\vix\bash.ps1"""
